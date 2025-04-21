@@ -16,11 +16,11 @@ public class Absensi {
         System.out.println("NIM : " + this.mahasiswa.nim + " |  Nama : " + this.mahasiswa.name);
         System.out.println("Mata Kuliah " + this.mataKuliah.nama);
         System.out.println("hadir : " + this.hadir + " | sakit : " + this.sakit + " | izin : " + this.izin + " | alpa : " + this.alpa);
-        System.out.println("Persentase Kehadiran : " + hitungPersentaseKehadiran() + "%");
+        System.out.println("Persentase Kehadiran : " + String.format("%.2f", hitungPersentaseKehadiran()) + "%");
     }
 
     double hitungPersentaseKehadiran() {
-        int total = this.hadir + this.alpa + this.izin + this.sakit;
+        double total = this.hadir + this.alpa + this.izin + this.sakit;
         return (this.hadir / total) * 100;
     }
 

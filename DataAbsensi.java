@@ -17,14 +17,14 @@ public class DataAbsensi {
     }
 
     void tampil() {
-        for (Absensi a : this.listAbsensi) {
-            a.tampilData();
-            System.out.println("--------------------------");
+        for (int i = 0; i < idx; i++) {
+            this.listAbsensi[i].tampilData();
+            System.out.println("---------------------------");
         }
     }
 
     void SortPersentaseDesc() {
-        for (int i = 1; i <= listAbsensi.length-1; i++) {
+        for (int i = 1; i < idx; i++) {
             Absensi temp = listAbsensi[i];
             int j = i-1;
             while (j >= 0 && listAbsensi[j].hitungPersentaseKehadiran() < temp.hitungPersentaseKehadiran()) {
