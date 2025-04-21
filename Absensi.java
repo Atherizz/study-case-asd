@@ -13,7 +13,9 @@ public class Absensi {
     }
 
     void tampilData() {
-
+        
     }
+
+
 
 }

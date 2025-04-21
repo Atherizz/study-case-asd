@@ -3,6 +3,9 @@ public class MainSistemKehadiran {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        DataMahasiswa listMhs = new DataMahasiswa(5);
+
+
         while (true) {
             System.out.println();
             System.out.println("=== SISTEM PENGELOLAAN KEHADIRAN MAHASISWA ===");
@@ -16,8 +19,7 @@ public class MainSistemKehadiran {
             int menu = sc.nextInt();
 
             if (menu == 1) {
-                // method tampil data mhs
-
+                listMhs.tampil();
             } else if (menu == 2) {
                 // method tampil data mk
 
