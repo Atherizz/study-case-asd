@@ -5,13 +5,21 @@ public class MainSistemKehadiran {
 
         DataMahasiswa listMhs = new DataMahasiswa(5);
         DataAbsensi listAbsensi = new DataAbsensi(10);
-        
-        // dummy
-        listMhs.tambah(new Mahasiswa("Ali Rahman","22001"));
-        listMhs.tambah(new Mahasiswa("Budi Santoso","22002"));
-        listMhs.tambah(new Mahasiswa("Citra Dewi","22003"));
-        listMhs.tambah(new Mahasiswa("Deni Saputra","22004"));
-        listMhs.tambah(new Mahasiswa("Eka Wulandari","22005"));
+
+        Mahasiswa mhs1 = new Mahasiswa("Ali Rahman","22001");
+        Mahasiswa mhs2 = new Mahasiswa("Budi Santoso","22002");
+        Mahasiswa mhs3 = new Mahasiswa("Citra Dewi","22003");
+        Mahasiswa mhs4 = new Mahasiswa("Deni Saputra","22004");
+        Mahasiswa mhs5 = new Mahasiswa("Eka Wulandari","22005");
+
+        // dummy mhs
+        listMhs.tambah(mhs1);
+        listMhs.tambah(mhs2);
+        listMhs.tambah(mhs3);
+        listMhs.tambah(mhs4);
+        listMhs.tambah(mhs5);
+
+        // dummy abs
 
         while (true) {
             System.out.println();
