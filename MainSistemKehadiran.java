@@ -4,7 +4,7 @@ public class MainSistemKehadiran {
         Scanner sc = new Scanner(System.in);
 
         DataMahasiswa listMhs = new DataMahasiswa(5);
-
+        DataMataKuliah listMK = new DataMataKuliah(3);
 
         while (true) {
             System.out.println();
@@ -20,8 +20,9 @@ public class MainSistemKehadiran {
 
             if (menu == 1) {
                 listMhs.tampil();
+
             } else if (menu == 2) {
-                // method tampil data mk
+                listMK.tampil();
 
             } else if (menu == 3) {
                 // method tampil data absensi
