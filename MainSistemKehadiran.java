@@ -57,8 +57,11 @@ public class MainSistemKehadiran {
                 listAbsensi.SortPersentaseDesc();
                 listAbsensi.tampil();
             } else if (menu == 5) {
-                
-                
+                System.out.print("Input NIM: ");
+                String inputnim = sc.next();
+                int posisi = listAbsensi.LinearSearch(inputnim);
+                listAbsensi.TampilPosisi(inputnim,posisi);
+                listAbsensi.TampilSearch(inputnim,posisi);
             } else if (menu == 0) {
                 System.out.println("Keluar dari program");
                 break;
