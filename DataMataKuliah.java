@@ -6,7 +6,7 @@ public class DataMataKuliah {
         listMK = new MataKuliah[jmlMK];
         idx = 0;
     }
-
+    
     void tambah(MataKuliah m) {
         if (idx < listMK.length) {
             listMK[idx] = m;
