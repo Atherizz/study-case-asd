@@ -4,7 +4,12 @@ public class MainSistemKehadiran {
         Scanner sc = new Scanner(System.in);
 
         DataMahasiswa listMhs = new DataMahasiswa(5);
-
+        // dummy
+        listMhs.tambah(new Mahasiswa("Ali Rahman","22001"));
+        listMhs.tambah(new Mahasiswa("Budi Santoso","22002"));
+        listMhs.tambah(new Mahasiswa("Citra Dewi","22003"));
+        listMhs.tambah(new Mahasiswa("Deni Saputra","22004"));
+        listMhs.tambah(new Mahasiswa("Eka Wulandari","22005"));
 
         while (true) {
             System.out.println();
