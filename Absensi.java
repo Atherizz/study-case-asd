@@ -13,7 +13,15 @@ public class Absensi {
     }
 
     void tampilData() {
-        
+        System.out.println("NIM : " + this.mahasiswa.nim + " |  Nama : " + this.mahasiswa.name);
+        System.out.println("Mata Kuliah " + this.mataKuliah.nama);
+        System.out.println("hadir : " + this.hadir + " | sakit : " + this.sakit + " | izin : " + this.izin + " | alpa : " + this.alpa);
+        System.out.println("Persentase Kehadiran : " + hitungPersentaseKehadiran() + "%");
+    }
+
+    double hitungPersentaseKehadiran() {
+        int total = this.hadir + this.alpa + this.izin + this.sakit;
+        return (this.hadir / total) * 100;
     }
 
 

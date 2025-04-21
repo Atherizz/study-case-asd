@@ -4,8 +4,8 @@ public class MainSistemKehadiran {
         Scanner sc = new Scanner(System.in);
 
         DataMahasiswa listMhs = new DataMahasiswa(5);
-
-
+        DataAbsensi listAbsensi = new DataAbsensi(10);
+        
         while (true) {
             System.out.println();
             System.out.println("=== SISTEM PENGELOLAAN KEHADIRAN MAHASISWA ===");
@@ -24,8 +24,7 @@ public class MainSistemKehadiran {
                 // method tampil data mk
 
             } else if (menu == 3) {
-                // method tampil data absensi
-
+                listAbsensi.tampil();
             } else if (menu == 4) {
                 // method sorting % absensi
 
