@@ -54,8 +54,8 @@ public class MainSistemKehadiran {
             } else if (menu == 3) {
                 listAbsensi.tampil();
             } else if (menu == 4) {
-                // method sorting % absensi
-
+                listAbsensi.SortPersentaseDesc();
+                listAbsensi.tampil();
             } else if (menu == 5) {
                 
                 
