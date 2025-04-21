@@ -20,6 +20,6 @@ public class DataMataKuliah {
         for(MataKuliah m: listMK) {
             m.tampilData();
             System.out.println("--------------------------");
-        }
+        } 
     }
 }
