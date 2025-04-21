@@ -34,4 +34,32 @@ public class DataAbsensi {
             listAbsensi[j+1] = temp;
         }
     }
+
+    int LinearSearch(String Carinim) {
+        int posisi = -1;
+
+        for (int i = 0; i < idx; i++){
+            if (listAbsensi[i].mahasiswa.nim.equals(Carinim)){
+                posisi = i;
+                break;
+            }
+        }
+        return posisi;
+    }
+
+    void TampilPosisi(String nim, int pos){
+        if (pos == -1){
+            System.out.println("Data Absensi dengan NIM "+nim+" tidak ditemukan.");
+        }else{
+            System.out.println("Data Absensi dengan NIM "+nim+" ditemukan pada index ke - " + pos);
+        }
+    }
+
+    void TampilSearch(String nim, int pos){
+        if (pos != -1){
+            System.out.println("==== DATA ABSENSI MAHASISWA ====");
+
+            listAbsensi[pos].tampilData();
+        }
+    }
 }
