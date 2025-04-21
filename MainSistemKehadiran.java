@@ -4,6 +4,8 @@ public class MainSistemKehadiran {
         Scanner sc = new Scanner(System.in);
 
         DataMahasiswa listMhs = new DataMahasiswa(5);
+        DataAbsensi listAbsensi = new DataAbsensi(10);
+        
         // dummy
         listMhs.tambah(new Mahasiswa("Ali Rahman","22001"));
         listMhs.tambah(new Mahasiswa("Budi Santoso","22002"));
@@ -29,8 +31,7 @@ public class MainSistemKehadiran {
                 // method tampil data mk
 
             } else if (menu == 3) {
-                // method tampil data absensi
-
+                listAbsensi.tampil();
             } else if (menu == 4) {
                 // method sorting % absensi
 
