@@ -24,6 +24,14 @@ public class DataAbsensi {
     }
 
     void SortPersentaseDesc() {
-        
+        for (int i = 1; i <= listAbsensi.length-1; i++) {
+            Absensi temp = listAbsensi[i];
+            int j = i-1;
+            while (j >= 0 && listAbsensi[j].hitungPersentaseKehadiran() < temp.hitungPersentaseKehadiran()) {
+                listAbsensi[j+1] = listAbsensi[j];
+                j--;
+            }
+            listAbsensi[j+1] = temp;
+        }
     }
 }
