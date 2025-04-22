@@ -30,10 +30,10 @@ public class MainSistemKehadiran {
         listMK.tambah(matkul3);
 
         // dummy abs
-        listAbsensi.tambah(new Absensi(mhs1, matkul1, 10, 1, 1, 0));
+        listAbsensi.tambah(new Absensi(mhs1, matkul1, 11, 1, 1, 1));
         listAbsensi.tambah(new Absensi(mhs1, matkul2, 12, 0, 1, 1));
-        listAbsensi.tambah(new Absensi(mhs2, matkul2, 12, 0, 1, 1));
-        listAbsensi.tambah(new Absensi(mhs1, matkul2, 16, 12, 2, 2));
+        listAbsensi.tambah(new Absensi(mhs2, matkul2, 9, 2, 1, 2));
+        listAbsensi.tambah(new Absensi(mhs1, matkul2, 10, 0, 0, 2));
         listAbsensi.tambah(new Absensi(mhs2, matkul1, 14, 11, 0, 3)); 
         listAbsensi.tambah(new Absensi(mhs3, matkul3, 10, 6, 2, 2));  
         listAbsensi.tambah(new Absensi(mhs4, matkul2, 12, 8, 2, 2)); 

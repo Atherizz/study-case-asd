@@ -20,7 +20,25 @@ public class Absensi {
     }
 
     double hitungPersentaseKehadiran() {
-        double total = this.hadir + this.alpa + this.izin + this.sakit;
+        double total = 0;
+        int []absen = {this.sakit, this.izin, this.alpa};
+
+        int zeroCounter = 0;
+
+        for (int i = 0; i < absen.length; i++) {
+            if (absen[i] == 0) {
+                zeroCounter++;
+            }
+        }
+
+        total = this.hadir + this.alpa + this.izin + this.sakit;
+
+        if (zeroCounter == 0) {
+            return (this.hadir / (total+2)) * 100;
+        } else if (zeroCounter == 1) {
+            return (this.hadir / (total+1)) * 100;
+        } 
+        
         return (this.hadir / total) * 100;
     }
 
